@@ -1,0 +1,206 @@
+/* Style untuk halaman utama */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('path/to/Minecraft.ttf') format('truetype');
+}
+
+
+/* Mencegah halaman bergeser kiri/kanan */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Mencegah halaman bergeser kiri/kanan */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Kustomisasi .nav-corp */
+.nav-corp {
+    border: 5px solid black;
+    padding: 2px;
+    margin: 5px auto;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(
+        45deg, 
+        #E3F2FD 25%, 
+        #BBDEFB 25%, 
+        #BBDEFB 50%, 
+        #90CAF9 50%, 
+        #90CAF9 75%, 
+        #64B5F6 75%
+    );
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling dengan font Minecraft */
+.nav-corp-out {
+    position: relative;
+    font-family: 'Minecraft', sans-serif; /* Gunakan font Minecraft */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #333;
+    color: #ffeb3b; /* Warna dasar */
+    font-style: italic;
+    background: linear-gradient(
+        45deg, 
+        #fff673 25%, 
+        #BBDEFB 25%, 
+        #ffd92f 50%, 
+        #90CAF9 50%, 
+        #90CAF9 75%, 
+        #e7cf62 75%
+    );
+    background-size: 200% 200%;
+    animation: gradientMove 5s ease infinite;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Bayangan teks */
+}
+
+/* Pengaturan teks di dalam .nav-corp-out */
+.nav-corp-out p {
+    color: #ffeb3b;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Bayangan tambahan */
+}
+
+/* Efek gradien bergerak */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes lightning {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #333;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
